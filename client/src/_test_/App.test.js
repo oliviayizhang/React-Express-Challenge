@@ -1,22 +1,22 @@
-import React from 'react';
-import ReactDOM from 'react-dom';
-import {App} from './App';
-import { shallow, mount, render, configure } from 'enzyme';
-import Adapter from 'enzyme-adapter-react-15';
-
-configure({ adapter: new Adapter() });
-
-describe('A test for App component', () => {
-  let wrapper
-
-  beforeEach(()=>{
-    wrapper = shallow(<App />);
-  })
-
-  it('should render App Component', () => {
-    expect(wrapper).to.have.length(1)
-  })
-})
+// import React from 'react';
+// import ReactDOM from 'react-dom';
+// import { App } from '../components/App';
+// import { shallow, mount, render, configure } from 'enzyme';
+// import Adapter from 'enzyme-adapter-react-15';
+//
+// configure({ adapter: new Adapter() });
+//
+// describe('A test for App component', () => {
+//   let wrapper;
+//
+//   beforeEach(()=>{
+//     wrapper = shallow(<App />);
+//   })
+//
+//   it('should render the App Component', () => {
+//     expect(wrapper).to.have.length(1)
+//   })
+// })
 
 
 // describe('App Component', () => {

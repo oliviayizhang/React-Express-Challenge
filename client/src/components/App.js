@@ -6,7 +6,7 @@ import {
   fetchGreetings
 } from '../actions'
 
-export class App extends Component {
+class App extends Component {
 
   componentDidMount() {
     fetchGreetings(this.props.dispatch)

@@ -14,16 +14,20 @@ class App extends Component {
 
   render() {
     let content = <div>Loading...</div>
+
     if (!this.props.isLoading) {
-      content = (<div>
-        <div className="content">
-          {this.props.content.length > 0 ? this.props.content[this.props.index] : null }
-        </div>
+      content = (
+        <div className="wrap">
+          <div className="content">
+            {this.props.content.length > 0 ? this.props.content[this.props.index] : null }
+          </div>
 
-        <button onClick={() => this.props.dispatch(nextItem())}>Next</button>
-      </div>)
+          <div id="button">
+            <button onClick={() => this.props.dispatch(nextItem())}>Next</button>
+          </div>
+      </div>
+      )
     }
-
     return (
       <div className="App">
         {content}

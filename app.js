@@ -10,10 +10,10 @@ var usersRouter = require('./routes/users');
 var app = express();
 
 //Serve static files from the React App
-// app.use('/', express.static(path.join(__dirname, '../client', 'build')));
+// app.use(express.static(path.join(__dirname, 'client', 'build')));
 //
 // app.get('*', function(request, response) {
-//    response.sendFile(path.join(__dirname, '../client', 'build', 'index.html'));
+//    response.sendFile('../client/build/index.html', {global: root} );
 //  });
 
 // view engine setup

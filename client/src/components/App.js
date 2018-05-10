@@ -13,7 +13,7 @@ class App extends Component {
   }
 
   render() {
-    let content = <div class="loader"></div>
+    let content = <div className="loader"></div>
 
     if (!this.props.isLoading) {
       content = (
